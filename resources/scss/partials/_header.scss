@@ -1,26 +1,27 @@
+// Style from variables partial
 @use './variables' as *;
-// HEADER 
 
+// Header style
 header{
-    width: 80%;
-    height: 130px;
-    @include align-justify-center;
-    img{
-      height: 70px;
-    } 
-  }
+  width: 80%;
+  height: 130px;
+  @include align-justify-center;
+  img{
+    height: 70px;
+  } 
+}
 
 nav{
-    height: 100%;
-    @include align-center;
-  }
+  height: 100%;
+  @include align-center;
+}
 
 .nav-list{
-    @include align-center;
-    gap: 1em;
-    list-style: none;
-    height: 100%;
-  }
+  @include align-center;
+  gap: 1em;
+  list-style: none;
+  height: 100%;
+}
 
 .nav-item{
   @include align-center;
