@@ -10,6 +10,9 @@
         {{-- Header from /partials --}}
         @include('partials.header')
 
+        {{-- Main from /partials --}}
+        @include('partials.main')
+
         {{-- Footer from /partials --}}
         @include('partials.footer')
     </body>
