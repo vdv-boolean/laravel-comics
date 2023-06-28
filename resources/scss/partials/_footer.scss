@@ -1,0 +1,113 @@
+@use './variables' as *;
+//   FOOTER
+
+.container-infos{
+    position: relative;
+    background-color: $brand-color;
+    height: 150px;
+    @include align-center;
+    .infos{
+      display: flex;
+      gap: 2em;
+      width: 70%;
+      margin-inline: auto;
+    }
+  }
+
+  .info {
+    @include align-center;
+    gap: 1em;
+    color: $base-color;
+    white-space: nowrap;
+
+    img{
+      height: 70px;
+    }
+
+    .special{
+      height: 50px;
+    }
+
+  }
+
+  .container-specs{
+    background-image: url(../img/footer-bg.jpg);
+    height: 350px;
+    padding: 3em;
+    display: flex;
+
+    .container{
+      width: 80%;
+      margin-inline: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .specs{
+      width: 30%;
+      display: flex;
+      ul{
+        list-style: none;
+        color: $base-color;
+        margin-right: 1em;
+
+        li{
+          font-size: .6em;
+          cursor: pointer;
+          color: rgb(167, 161, 161);
+          margin-top: .5em;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+
+        .subtitle{
+            color: $base-color;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: .5em;
+          }
+      }
+    } 
+  }
+
+
+  .dc-logo{
+    width: 50%;
+    height: 100%;
+    @include align-center;
+
+    img{
+      width: 450px;
+      overflow: hidden;
+    }
+  }
+
+  .socials{
+    position: relative;
+    height: 130px;
+    background-color: $brand-color-dark;
+
+    .container{
+      width: 70%;
+      height: 100%;
+      @include align-justify-center;
+        button{
+        padding: 1em;
+        border: 2px solid $brand-color;
+        background-color: $brand-color-dark;
+        color: $base-color;
+        height: 60px;
+        cursor: pointer;
+        &:active{
+          background-color: grey;
+        }
+      }
+
+        .platforms{
+        @include align-center;
+        gap: 1em;
+        color: $brand-color;
+      }
+    }
+  }
