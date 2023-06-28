@@ -1,3 +1,6 @@
+// Style from Header partial
 @use './partials/header' as *;
+// Style from Footer partial
 @use './partials/footer' as *;
+
 @import "~bootstrap/scss/bootstrap";
