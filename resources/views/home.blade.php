@@ -9,5 +9,8 @@
     <body>
         {{-- Header from /partials --}}
         @include('partials.header')
+
+        {{-- Footer from /partials --}}
+        @include('partials.footer')
     </body>
 </html>
