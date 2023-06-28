@@ -1,0 +1,23 @@
+$base-color: white;
+$brand-color: rgba(2,130,249,255);
+$brand-color-dark:rgba(48,48,48,255);
+
+
+@mixin align-justify-center{
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin align-center{
+    display: flex;
+    align-items: center;
+}
+
+@mixin brand-color-btn{
+    color: $base-color;
+    padding: .6em;
+    background-color: $brand-color;
+    font-weight: bold;
+}
